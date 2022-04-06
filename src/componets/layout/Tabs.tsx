@@ -3,7 +3,7 @@ const Tabs = () => {
     const tabs = [
         {
             name: "Trending",
-            link: "/tranding"
+            link: "/trending"
         },
         {
             name: "Random",
