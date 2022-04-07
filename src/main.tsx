@@ -3,25 +3,27 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Feed } from '.';
+import { Feed, ArticleDeatils } from '.';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} >
+          {/* tabs following */}
           <Route index element={<Feed />} />
+          {/* trending */}
           <Route
             path='trending' element={
               <Feed />
             }
           />
+          {/* random 25 stories */}
           <Route path='random' element={<Feed />} />
 
+          {/* articles details page */}
           <Route path='articles' element={
-            <main>
-              <h2>Article</h2>
-            </main>
+            <ArticleDeatils />
           } />
           {/* user profile  */}
 

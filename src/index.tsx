@@ -5,3 +5,5 @@ export { default as ArticleCard } from "./componets/articles/ArticleCard";
 export { default as Feed } from "./pages/Feed"
 export { default as TrendingCommunities } from "./componets/community/TopCommunity";
 export { default as TopCommunity } from "./componets/community/community"
+export { default as ArticleDeatils } from "./componets/articles/ArticleDetail"
+export { default as MoreArticleCard } from "./componets/articles/More"
