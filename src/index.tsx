@@ -7,3 +7,8 @@ export { default as TrendingCommunities } from "./componets/community/TopCommuni
 export { default as TopCommunity } from "./componets/community/community"
 export { default as ArticleDeatils } from "./componets/articles/ArticleDetail"
 export { default as MoreArticleCard } from "./componets/articles/More"
+export { default as Profile } from "./componets/user/profile"
+export { default as ProfileOVerview } from "./componets/user/profileOverview"
+export { default as AllUserPosts } from "./componets/user/all.posts"
+export { default as Communities } from "./componets/user/communities"
+export { default as Followers } from "./componets/user/followers"
