@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Feed, ArticleDeatils, Profile, ProfileOVerview } from '.';
+import { Feed, ArticleDeatils, ProfileTabs, ProfileOVerview, Board, BoardOverviewTab } from '.';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,7 +28,7 @@ ReactDOM.render(
 
 
           {/* user profile  */}
-          <Route path='profile/:id' element={<Profile />}>
+          <Route path='profile/:id' element={<ProfileTabs />}>
             <Route index element={
               <ProfileOVerview />
             } />
@@ -49,18 +49,41 @@ ReactDOM.render(
                 <h2>All communities that you are following are here  </h2>
               </main>
             } />
-
-
           </Route>
 
+          <Route path='Board/:id' element={<BoardOverviewTab />}>
+            <Route index element={
+              <Board />
+            } />
+            <Route path='posts' element={
+              <main>
+                <h2>all posts are here
+                </h2>
+              </main>
+            } />
+            <Route path='members' element={
+              <main>
+                <h2>All followers are here </h2>
+              </main>
+            } />
 
-
+            <Route path='faqs' element={
+              <main>
+                <h2>All communities that you are following are here  </h2>
+              </main>
+            } />
+            <Route path='modrators' element={
+              <main>
+                <h2>All communities that you are following are here  </h2>
+              </main>
+            } />
+            <Route path='rules' element={
+              <main>
+                <h2>All communities rules  </h2>
+              </main>
+            } />
+          </Route>
           {/* board profile */}
-          <Route path='boards/:id' element={
-            <main>
-              <h2>Board</h2>
-            </main>
-          } />
         </Route>
       </Routes>
     </BrowserRouter>

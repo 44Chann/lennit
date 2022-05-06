@@ -1,24 +1,29 @@
 import { Link, Outlet } from "react-router-dom";
 import { ArticleCard } from "../..";
 
-const Profile = () => {
+const BoardOverviewTab = () => {
+
 
     const links = [
         {
-            name: "overview",
+            name: "posts",
             link: ""
         },
         {
-            name: "posts",
-            link: "posts"
+            name: "members",
+            link: "members"
         },
         {
-            name: "followers",
-            link: "followers"
+            name: "Modrators",
+            link: "modrators"
         },
         {
-            name: "communities",
-            link: "communities"
+            name: "Rules",
+            link: "rules"
+        },
+        {
+            name: "FAQs",
+            link: "faqs"
         },
     ]
 
@@ -41,4 +46,4 @@ const Profile = () => {
 }
 
 
-export default Profile;
+export default BoardOverviewTab;

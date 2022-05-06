@@ -15,7 +15,7 @@ const ArticleCard = () => {
                             <img src="/pfp.png" className="object-cover" alt="" />
                         </div>
                         <div>
-                            <p className="mx-4 text-lg font-bold">{<Link to="/profile/:userid" className="text-blue-700 underline">Kid</Link>} posted in {<Link to="/boards/:boardid" className="text-blue-700 underline">44Chan</Link>}</p>
+                            <p className="mx-4 text-lg font-bold">{<Link to="/profile/:userid" className="text-blue-700 underline">Kid</Link>} posted in {<Link to="/board/:boardid" className="text-blue-700 underline">44Chan</Link>}</p>
                         </div>
                     </div>
                     <Link to="/articles" >
